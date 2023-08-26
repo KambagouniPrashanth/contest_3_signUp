@@ -19,7 +19,12 @@ function checkUserExistOrNot(){
     // }
     let users=JSON.parse(localStorage.getItem("users"))
 
-    if(email.value===users.email){
+    let userObj=users.forEach(element => {
+        return element.email===email.value;
+        
+    });
+
+    if(userObj){
         return true;
     }
     return false;
