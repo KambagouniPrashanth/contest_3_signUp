@@ -12,5 +12,5 @@ logout_btn.addEventListener("click",()=>{
     password.textContent="";
 
     localStorage.clear();
-    window.location.href='/CONTEST-3-SINGUP/index.html'
+    window.location.href='/index.html'
 })
